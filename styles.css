@@ -1,0 +1,110 @@
+  header {
+      z-index: -1;
+      background-image: url(./images/seats.jpg);
+      background-size: cover;
+      opacity: 0.5;
+      display: block;
+  }
+
+  .logo {
+      z-index: 1;
+      padding: 100px 30px 30px 60px;
+      max-width: 30%;
+  }
+
+  nav {
+      float: right;
+      display: block;
+  }
+
+  button {
+      border-radius: 50px;
+      margin: 60px 60px 0px 0px;
+      background-color: #CE1212;
+      color:#f2f2f2;
+      text-align: center;
+      outline: none;
+      display: block;
+  }
+  .login {
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+ 
+
+  .navigation {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  
+  body {
+    font-family: "Roboto", Verdana, Tahoma, sans-serif;
+    font-size:xx-large;
+    background-color: #f2f2f2;
+  }
+
+  main {
+    padding: 75px 0px 75px 0px;
+    font-family: "Roboto", Verdana, Tahoma, sans-serif;
+    color:#40403F
+  }
+  
+  h1 {
+    font-family: "Bebas Neue", "Segoe UI", Tahoma, Verdana, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 600px) {
+      .container {
+          flex-direction: row;
+      }
+  }
+
+  footer {
+    background-color: #40403F;
+    font-family: "Roboto", Verdana, Tahoma, sans-serif;
+    color: #f2f2f2;
+    padding: 40px 0px 40px 0px;
+  }
+
+
+  footer h4, ol {
+    text-align: left;
+    font-size: medium;
+  }
+
+  .containerF {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .itemF {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 600px) {
+      .containerF {
+          flex-direction: row;
+      }
+  }
+
+
+
+  
