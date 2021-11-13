@@ -1,47 +1,28 @@
-  header {
-      z-index: -1;
-      background-image: url(./images/seats.jpg);
-      background-size: cover;
-      opacity: 0.5;
-      display: block;
-  }
 
+  
+/* home page */
   .logo {
-      z-index: 1;
       padding: 100px 30px 30px 60px;
       max-width: 30%;
   }
 
-  nav {
+  #home{
+      padding-left: 60px;
+  }
+
+  .navigation{
+      padding-right: 60px;
+  }
+  .film {
+      max-width: 30%;
       float: right;
-      display: block;
   }
 
-  button {
-      border-radius: 50px;
-      margin: 60px 60px 0px 0px;
-      background-color: #CE1212;
-      color:#f2f2f2;
-      text-align: center;
-      outline: none;
-      display: block;
-  }
-  .login {
-      margin-top: 30px;
-      margin-bottom: 30px;
-  }
- 
-
-  .navigation {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-  
   body {
     font-family: "Roboto", Verdana, Tahoma, sans-serif;
     font-size:xx-large;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
+    min-height: 100vh;
   }
 
   main {
@@ -57,7 +38,8 @@
   .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    background-color: #ffffff;
+
   }
   
   .item {
@@ -65,12 +47,6 @@
     padding: 10px;
     margin: 10px;
     text-align: center;
-  }
-
-  @media only screen and (min-width: 600px) {
-      .container {
-          flex-direction: row;
-      }
   }
 
   footer {
@@ -99,12 +75,251 @@
     text-align: center;
   }
 
-  @media only screen and (min-width: 600px) {
-      .containerF {
-          flex-direction: row;
-      }
+ 
+
+
+  /* Search page */
+
+  .logoW{
+      max-width: 200px;
+      padding: 30px;
   }
 
+  nav, #hamburger-menu {
+      display: none;
+  }
+
+  nav ul {
+      padding: 0px;
+  }
+
+  nav li {
+      display: block;
+  }
+
+  nav a {
+      text-decoration: none;
+      color: #40403F;
+      padding: 10px 10px 10px 60px;
+      display: block;
+  }
+
+  nav a:hover {
+      text-decoration: underline;
+  }
+
+  .current {
+      font-weight: bold;
+  }
+
+  .hamburger-label{
+      float: right;
+      color: #40403F;
+      padding: 30px;
+      font-size: 1.5em;
+      display: block;
+  }
+
+  #hamburger-menu:checked ~ nav {
+      display: block;
+  }
+
+.dropbtn {
+    background-color: #40403F;
+    color: white;
+    padding: 16px;
+    font-size: large;
+    font-family: "Roboto", Verdana, Tahoma, sans-serif;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px  #40403F;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: red;}
 
 
+  /* Payment page */
+
+  .row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    background: white;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; 
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; 
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+
+  /* Payment page */
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #40403F;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: red;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Login page */
+  .login, .movie {
+    min-height: 100vh;
+    background: lightgray;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: auto;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+ div {
+     background: white;
+ }
+
+ .signup {
+     text-align: center;
+     font-size: medium;
+ }
+
+
+ /* Film page*/
+
+.whatchnow {
+    background: #40403F;
+    color: white;
+}
+
+.whatchnow:hover {
+    background-color: red;
+}
+
+ .description {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .container, .containerF {
+        flex-direction: row;
+    }
+
+    .logoW {
+        float:left
+    }
+
+    nav {
+        display: inline-block;
+    }
+
+    .hamburger-label {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .film {
+        display: none;
+    }
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
   

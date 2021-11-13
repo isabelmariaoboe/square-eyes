@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Square Eyes, connecting film-lovers" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/SquareEyes_Logo (1).png">
+    <title>Square Eyes | Search</title>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+  </head>
+  <body>
+   
+    <header>
+        <img src="images/SquareEyes_Logo (1).png" alt="logo" class="logoW">
+        <label class="hamburger-label" for="hamburger-menu"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 224H31.1C14.33 224 0 238.3 0 256s14.33 32 31.1 32h384C433.7 288 448 273.7 448 256S433.7 224 416 224zM416 384H31.1C14.33 384 0 398.3 0 415.1S14.33 448 31.1 448h384C433.7 448 448 433.7 448 416S433.7 384 416 384zM416 64H31.1C14.33 64 0 78.33 0 95.1S14.33 128 31.1 128h384C433.7 128 448 113.7 448 96S433.7 64 416 64z"></path></svg></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html" class="current">Search</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="website">
+        <form class="search"> 
+            <input type="search" id="query" name="q" placeholder="Search...">
+            <button>Search</button>
+          </form>
+          <span><p><i>Advanced search</i></p>
+          <div class="dropdown">
+            <button class="dropbtn">Select a category</button>
+            <div class="dropdown-content">
+              <a href="#">Recent</a>
+              <a href="#">Documentary</a>
+              <a href="#">Narrative</a>
+              <a href="#">Animation</a>
+              <a href="#">Experimental</a>
+            </div>
+        
+          </div>
+        </span>
+    </main>
+
+  </body>
