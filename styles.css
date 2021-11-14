@@ -124,6 +124,15 @@
       display: block;
   }
 
+  button {
+    font-family: "Roboto", Verdana, Tahoma, sans-serif;
+    background-color: #40403F;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+
+  }
+
 .dropbtn {
     background-color: #40403F;
     color: white;
@@ -131,7 +140,9 @@
     font-size: large;
     font-family: "Roboto", Verdana, Tahoma, sans-serif;
     border: none;
+    border-radius: 25px;
   }
+
   
   .dropdown {
     position: relative;
@@ -158,39 +169,12 @@
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: red;}
 
-
-  /* Payment page */
-
-  .row {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 -16px;
-    background: white;
-  }
-  
-  .col-25 {
-    -ms-flex: 25%; 
-    flex: 25%;
-  }
-  
-  .col-50 {
-    -ms-flex: 50%; 
-    flex: 50%;
-  }
-  
-  .col-75 {
-    -ms-flex: 75%;
-    flex: 75%;
-  }
-  
-  .col-25,
-  .col-50,
-  .col-75 {
-    padding: 0 16px;
+  .website {
+      text-align: center;
   }
 
-  /* Payment page */
+
+ /* Payment page */
   
   .container {
     background-color: #f2f2f2;
@@ -228,22 +212,13 @@
     border-radius: 3px;
     cursor: pointer;
     font-size: 17px;
+    font-family: "Roboto", Verdana, Tahoma, sans-serif;
   }
   
   .btn:hover {
     background-color: red;
   }
   
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-  @media (max-width: 800px) {
-    .row {
-      flex-direction: column-reverse;
-    }
-    .col-25 {
-      margin-bottom: 20px;
-    }
-  }
 
   /* Login page */
   .login, .movie {
@@ -255,9 +230,12 @@
     padding-left: 30%;
     padding-right: 30%;
 }
- div {
-     background: white;
- }
+
+section.login {
+    text-align: center;
+    padding-top: 250px;
+}
+
 
  .signup {
      text-align: center;
