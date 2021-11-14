@@ -260,6 +260,17 @@ section.login {
 }
 
 
+/* Profiles page */
+
+section.user {
+    text-align: center;
+}
+
+.about {
+    margin: 60px;
+}
+
+
 
 
 @media only screen and (min-width: 600px) {
