@@ -246,7 +246,7 @@ section.login {
  /* Film page*/
 
 .whatchnow {
-    background: #40403F;
+    background: grey;
     color: white;
 }
 
@@ -269,6 +269,21 @@ section.user {
 .about {
     margin: 60px;
 }
+
+/* Sign up page */
+
+a.buttonCSS {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Roboto", Verdana, Tahoma, sans-serif; 
+    display: inline-block;
+    border-radius: 25px;
+}
+  
+
 
 
 
