@@ -23,6 +23,7 @@ Tech used to build the project
 
 - HTML5
 - CSS3
+- JavaScript
 - [WordPress](https://www.wordpress.org/)
 
 ## Contact
